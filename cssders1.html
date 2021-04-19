@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--
+        1-Etiket üzerinden seçme
+        2-id üzerinden seçme
+    -->
+    <!--important > inline styling > id > class > element styling -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS DERS-1</title>
+    <!--external css-->
+    <link rel="stylesheet" href="style.css">
+    <!--internal css-->
+    <style>
+        #bolum1{
+            background-color: black !important;
+            color: green !important;
+            font-size: 30px !important;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .bolum{
+            background-color: violet;
+            color: blue;
+        }
+        div{
+            background-color: pink;
+            color: rgb(255, 255, 133);
+        }
+    </style>
+</head>
+<body>
+    <!--inline css > internal css-->
+    <div style="background-color: tomato; color: black;" >HTML / CSS DERSLERİM</div>
+    <!--Önem Sırası: 1. si important olan, sonra inline içinden verilen , sonra da etikete yakın olanı kullanır-->
+    <div>HTML / CSS DERSLERİM</div>
+    <div id="bolum1">HTML / CSS DERSLERİMMM</div>
+    <!--#bolum > .bolum oldugu için id li olan uygulanır-->
+    <div id="bolum1" class="bolum">HTML / CSS DERSLERİM</div>
+</body>
+</html>
