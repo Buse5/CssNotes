@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS KULLANIMI</title>
+    <style>
+        #heading {
+            color: blue;
+        }
+
+        h2 {
+            color: blueviolet;
+            font-family: Lobster, monospace;
+            background-color: burlywood;
+        }
+
+        .silver-background {
+            background-color: silver;
+        }
+
+        .red-text {
+            color: red;
+        }
+
+        p {
+            font-size: 30px;
+        }
+
+        .larger-image {
+            width: 500px;
+        }
+
+        .smaller-img {
+            width: 100px;
+        }
+
+        .borders {
+            border-color: royalblue;
+            border-style: dashed;
+            border-width: 5px;
+            border-radius: 50px;
+        }
+
+        .red-box {
+            background-color: crimson;
+            color: darkgray;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        [type='radio'] {
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--Buarad h2 ye verilen id özel sınıftır. Özel sınıflar # ile başlayarak adlanırılır ve id ile çağırılır.-->
+    <!--Burada eğer class ile headingi çağırmaya çalışsaydım gelmezdi.-->
+    <h2 id="heading" style="text-align: center;" >Merhaba</h2>
+
+    <img class="larger-img" src="images/satürn.png" alt="Satürn">
+
+    <img class="smaller-img borders" src="images/satürn.png" alt="Satürn">
+
+    <p class="red-text silver-background" style="text-align: center;">Css Notlarıma Hoşgeldiniz</p>
+
+    <p>Cinsiyetiniz:</p>
+    <label for="kadın">Kadın</label>
+    <input type="radio" id="kadın" name="Cinsiyet" value="Kadın">
+    <label for="erkek">Erkek</label>
+    <input type="radio" id="erkek" name="Cinsiyet" value="Erkek">
+</body>
+
+</html>
