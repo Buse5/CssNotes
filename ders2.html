@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-Ders-2</title>
+    <style>
+        .ders2 {
+            color: cornflowerblue;
+            background-color: crimson;
+        }
+
+        .paragraf1 {
+            /*horizontal - yatay*/
+            text-align: center;
+        }
+
+        img {
+            /*vertical - dikey*/
+            vertical-align: middle;
+        }
+
+        .paragraf2 {
+            /*ltr=left to right
+            rlt=right to left arapça gibi sağdan okuma*/
+            direction: rlt;
+            unicode-bidi: bidi-override;
+        }
+
+        .paragraf3 img {
+            vertical-align: top;
+        }
+
+        a {
+            /* linkin altındaki çizgiyi kaldırmak için none dedik.*/
+            text-decoration: none;
+        }
+
+        .paragraf4 {
+            /*capitalize: hepsinin baş harfi büüyk
+            lovercase:hepsi küçük
+            uppercase:hesi büyük gibi özellikleri buradan ayarlayabilirz.*/
+            /*indention yazının nerden başlayacağını söyler
+            letter space her harf arasında boşluk bırakmadır.*/
+            text-transform: capitalize;
+            font-size: 40px;
+            font-family: fantasy;
+            text-indent: 20px;
+            letter-spacing: 2px;
+            text-shadow: 5px 5px 5px rgb(238, 57, 238);
+            /*ilki aşağı olması ikinisi sağa olması 3. süsü de blur olması*/
+        }
+
+        .ders4 {
+            /*etiket komple oratadan kalkar displayde */
+            /*inline olması uzunluğu kadar yer kaplamasıdır*/
+            /*display özelliği inlin olanlara genişlik yükseklik veremiyiz ama inline-block verirsek o zaman yükseklikgenişlik verebiliriz.*/
+            display: inline;
+        }
+
+        .ders5 {
+            /*etiket duruyordur ama bunu saklarız sadece gizlemiş oluruz ama o hala orada durur.*/
+            visibility:visible;
+        }
+
+        div {
+            border: 3px slateblue solid;
+        }
+
+        /*Pseudo Classlar*/
+        a:link {
+            /*linke tıklamadan önec renk verdik*/
+            color: darkred;
+        }
+
+        a:visited {
+            /*tıklandıktan sonra regi değişmesi durumu*/
+            color: violet;
+        }
+
+        a:hover {
+            /*üstüne gelme yani bunun ütüne gelince renk değişir*/
+            color: teal;
+            background-color: wheat;
+            /*Üstüne gelince imlece şekil verir. pointer, progreass, crosshair gibi*/
+            cursor: crosshair;
+        }
+
+        a:active {
+            /*Bu linkin içindeysem o an o rengi özelliği vs veriir*/
+            color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <!--text-align:justify; Bu yazıları daha düzgün ahle geitit diyebilirz.-->
+    <!--Emmet: etikeleri daha kolay yazma Mesela= div.der2 diyince otomatik oluşturur.-->
+    <!--Yada mesela 5 tane div yapacaksam tek tek yazmaya gerek yok div*5 yazınca otomatih 5 tane div yapar-->
+    <!--Yada div>p yaparsak divin için ep açar-->
+    <div class="ders2">
+        Lorem ipsum dolor sit amet consectetur a
+        dipisicing elit. Dolorem quibusdam iusto
+        recusandae error porro eius illo aspernatur
+        accusamus pariatur aperiam vitae eligendi
+        doloribus sunt architecto ut,
+        nobis suscipit expedita laborum.
+    </div>
+    <p class="paragraf1">
+        Bu görsel : <img src="/images/satürn.png" alt=""> satürndür.
+    </p>
+    <p class="paragraf2">
+        Bu görsel : <img src="/images/satürn.png" alt=""> satürndür.
+    </p>
+    <p class="paragraf3">
+        Bu görsel : <img src="/images/satürn.png" alt=""> satürndür.
+    </p>
+    <div class="ders3">
+        Google'ye gitmek için <a href="https://www.google.com.tr/" style="font-style: italic; font-size: 20px;"
+            target="_blank">buraya</a> tıklayınız.
+    </div>
+    <div class="paragraf4">
+        Google'ye gitmek için <a href="https://www.google.com.tr/" style="font-style: italic; font-size: 40px;"
+            target="_blank">buraya</a> tıklayınız.
+    </div>
+    <div class="paragraf4">
+        Google'ye gitmek için <a href="https://www.google.com.tr/" style="font-style: italic; font-size: 40px;"
+            target="_blank">buraya</a> tıklayınız.
+    </div>
+    <br>
+    <div class="ders4">
+        DISPLAY ÖZELLİĞİ 4
+    </div>
+    <br>
+    <div class="ders5">
+        DISPLAY ÖZELLİĞİ 5
+    </div>
+</body>
+
+</html>
